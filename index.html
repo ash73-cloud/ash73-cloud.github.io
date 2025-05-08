@@ -4,8 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ashis Kumar Parida | Portfolio</title>
+  <link rel="icon" href="ashis-icon.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
@@ -18,6 +22,14 @@
       color: white;
       padding: 2rem 1rem;
       text-align: center;
+    }
+    header img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-bottom: 1rem;
     }
     header h1 {
       margin: 0;
@@ -59,10 +71,25 @@
       padding: 2rem 1rem;
       color: #6c757d;
     }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .contact a {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+      .skills span {
+        display: block;
+        margin: 0.2rem 0;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
+    <img src="ashis.jpeg" alt="Ashis Kumar Parida">
     <h1>Ashis Kumar Parida</h1>
     <p>Software Engineer - Data | AI Enthusiast | Hackathon Winner</p>
   </header>
